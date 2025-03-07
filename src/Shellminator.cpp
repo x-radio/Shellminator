@@ -434,7 +434,7 @@ void Shellminator::printHistory(){
 
     #ifdef SHELLMINATOR_ENABLE_HIGH_MEMORY_USAGE
 
-    sprintf( acceleratorBuffer, "  \033[1;35m%3d  \033[0;37m%s\r\n", index, cmd_buff[ i ] );
+    sprintf( acceleratorBuffer, "  \033[1;35m%3d  \033[0;37m%s\r\n", (int)index, cmd_buff[ i ] );
     channel -> print( acceleratorBuffer );
 
     #else
